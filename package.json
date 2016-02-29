@@ -1,0 +1,29 @@
+{
+  "name": "poorreflection",
+  "version": "1.0.0",
+  "description": "Magic Mirror App for Raspberry Pi",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tiggs/PoorReflection.git"
+  },
+  "keywords": [
+    "magic",
+    "mirror",
+    "raspberry",
+    "pi"
+  ],
+  "author": "David Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tiggs/PoorReflection/issues"
+  },
+  "homepage": "https://github.com/Tiggs/PoorReflection#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "forecast.io": "0.0.9"
+  }
+}
