@@ -37,5 +37,11 @@ app.get('/api/pir', function(request, response) {
     */
 });
 
-app.listen(8080);
-console.log('magic mirror active');
+var server = app.listen(8080);
+if (config.weatherApiKey === '') {
+    server.close(function() {
+        console.error("You need to set a WeatherApiKey in config.js! Subscribe to one at https://developer.forecast.io/");
+    });
+} else {
+    console.log('magic mirror active');
+}
