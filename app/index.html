@@ -3,14 +3,28 @@
   <head>
       <title>press f11 for fullscreen</title>
        <meta charset="utf-8">
+       <link type="text/css" href="/css/style.css" rel="stylesheet">
+       <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
   </head>
-<body ngController="mainController">
+<body ng-controller="mainController">
+<div class="container everything">
+    <div class="weather-container" id="weather-container">
+        <h1 class="current temperature">{{weatherTemperature}}° F &#8226; {{weatherStatus}} <img class="weather-icon" src="/images/{{weatherCurrentIcon}}.png"></h1>
+        <h4 class="weathersummary">{{weatherTodaySummary}}</h4>
+    </div>
 
-<p>hello nerds</p>
+    <div class="clock-container">
+        <h1 class="clock" ng-bind-template="{{clock | date: 'h:mm a'}}"></h1>
+        <h3>{{clock | date: 'M/d/yy &#8226; EEE'}}</h3>
+    </div>
 
-
+    <div class="quote-container">
+        <h1>{{test}}</h1>
+    </div>
+</div>
 
 <script src="/js/angular.js"></script>
 <script src="/js/core.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
 </body>
 </html>
