@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #000;
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    text-shadow: 0 0 5px #fff;
+}
+
+h1 {
+    font-size: 48px;
+}
+h2 {
+    font-size: 36px;
+}
+h4 {
+    font-size: 24px;
+}
+
+.everything {
+    opacity: 1;
+}
+
+.container {
+    padding: 2em;
+}
+
+.weather-container {
+    float: left;
+    width: 40%;
+}
+
+.temperature {
+
+}
+
+.clock-container {
+    text-align: right;
+    float: right;
+    width: 40%;
+}
+
+.clock {
+
+}
+
+.weathersummary {
+    margin-top: 16px;
+    width: 80%;
+}
+
+.quote-container {
+    border-radius: 5px;
+    position: absolute;
+    margin: 0 auto;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 10%;
+    text-align: center;
+}
+
+.weather-icon {
+    vertical-align: middle;
+    height: 40px;
+    width: 40px;
+}
