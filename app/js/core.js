@@ -44,9 +44,8 @@ magicMirror.controller('mainController', ['$scope', '$http', '$location', '$inte
                 // don't do anything right now, pir probably isn't installed
             });
     }
-    /*
+    
     motion();
     $interval(motion, 1000);
-    */
 
 }]);

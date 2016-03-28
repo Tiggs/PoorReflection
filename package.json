@@ -24,6 +24,8 @@
   "homepage": "https://github.com/Tiggs/PoorReflection#readme",
   "dependencies": {
     "express": "^4.13.4",
-    "forecast.io": "0.0.9"
+    "forecast.io": "0.0.9",
+    "gpio": "^0.2.7",
+    "pi-gpio": "0.0.8"
   }
 }
